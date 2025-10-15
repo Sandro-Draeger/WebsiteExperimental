@@ -60,15 +60,16 @@
 
 .page-container {
   position: relative;
-  width: 100%;     
+  width: 100%;  
+  height: 816;   
   text-align: center;
   overflow: hidden;
 }
 
 .page-container img {
-  width: 100%;     
-  height: auto;  
-  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .texto {
@@ -111,6 +112,9 @@
   justify-content: center;
   align-items: center;
   font-family: jura;
+  font-size: 20px;
+  font-weight: 700;
+
 }
 
 .destaque {
@@ -124,14 +128,36 @@
   background-color: black;
 }
 
+.tituloParte2 {
+    font-size: 30px;
+}
+
+.fraseParte2 {
+    font-size: 43px;
+}
 
 .lists-container {
   display: flex;
   justify-content: center; 
-  gap: 40px;               
-  margin-top: 40px;       
+  gap: 40px;                
+  margin: 15px; 
+  padding: 15px; 
+    --b: 5px; /* thickness of the border */
+    --c: black; /* color of the border */
+    --w: 20px; /* width of border */
+ 
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg, var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+ 
+    background: conic-gradient(
+                from 90deg at top var(--b) left var(--b),
+                var(--_g)
+            )
+            0 0 / var(--_p),
+        conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+            100% 100% / var(--_p);
 }
-
 
 .list {
   list-style: none;
@@ -140,3 +166,83 @@
   text-align: left;
 }
 
+/* Home Parte 3 */
+
+#HomeParte3 {
+    background-color: black;
+    position: relative;
+    align-items: stretch; 
+    
+}
+
+.imgKombiAzul {
+  object-fit: cover;
+}
+
+.tituloParte3 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: jura;
+  font-weight: 700;
+  color: white;
+  font-size: 30px;
+  
+}
+
+.buttonDescobrir {
+  background-color: #00000000;
+  color: white;
+  border-radius: 35px;
+  cursor: pointer;
+  height: 77px;
+  width: 309px;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  font-family: jura;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 25px;
+}
+
+.buttonDescobrir:hover {
+  background-color: #fdfdfd88;
+}
+
+/* Home Parte 4 */
+
+#HomeParte4 {
+  background-color: #b49b2c25;
+  position: relative;
+  align-items: stretch; 
+}
+
+.tituloParte4 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: jura;
+  font-weight: 700;
+  color: black;
+  font-size: 30px;
+  
+}
+
+.buttonExplorar {
+  background-color: #00000000;
+  color:black;
+  border-radius: 35px;
+  cursor: pointer;
+  height: 77px;
+  width: 309px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  font-family: jura;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 25px;
+}
+
+.buttonExplorar:hover {
+  background-color: #fdfdfd88;
+}
