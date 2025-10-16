@@ -1,4 +1,14 @@
+/* Ativação do scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Home parte 1 */
+
+#HomeParte01 .page-container {
+  height: 100vh; /* 70% da altura da tela */
+}
 
 #navbar {
   position: absolute;
@@ -12,20 +22,20 @@
   align-items: center;
   padding: 15px 40px;
   margin-bottom: 20px;
-}
-
-#navitem {
   font-family: 'Jura', sans-serif;
   font-size: 25px;
-  font-weight: 500;
-  line-height: 118%;
-  margin: 10px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  font-weight: 700 !important;
 }
 
 .nav-link {
+  font-family: jura;
   color: black !important;
   text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 118%;
+  margin: 10px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.26);
 }
 
 .nav-link:hover {
@@ -82,22 +92,6 @@
   text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
   width: 90%;
   text-align: center;
-}
-
-
-@media (max-width: 1024px) {
-  .page-container { height: 600px; }
-  .texto { font-size: 55px; }
-}
-
-@media (max-width: 768px) {
-  .page-container { height: 400px; }
-  .texto { font-size: 40px; }
-}
-
-@media (max-width: 480px) {
-  .page-container { height: 280px; }
-  .texto { font-size: 28px; }
 }
 
 /* Home parte 2 */
@@ -272,17 +266,6 @@
   background-repeat: no-repeat;
 }
 
-
-@media (max-width: 1024px) {
-  .page-container { height: 500px; }
-}
-@media (max-width: 768px) {
-  .page-container { height: 350px; }
-}
-@media (max-width: 480px) {
-  .page-container { height: 250px; }
-}
-
 .blogButton {
   background-color: black;
   color:white;
@@ -372,3 +355,81 @@ footer.footer {
   margin-top: 1rem;
   font-family: jura;
 }
+
+/* Botão voltar ao topo */
+
+#btnTopo {
+  position: fixed;
+  bottom: 58px;
+  right: 58px;
+  width: 58px;
+  height: 58px;
+  border: 3px solid black;
+  border-radius: 50%;
+  padding: 0;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+#btnTopo .arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#btnTopo:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+/* ---------------------PAGINA ACOMODAÇÃO--------------------------- */
+
+#CardsAcomodacao {
+  background-color: #b49b2c25;
+  padding: 50px;
+}
+.page-container2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-container2 img {
+  width: 100%;
+  height: 570px;         
+  object-fit: cover;    
+  display: flex;
+}
+
+.textoPage2 {
+  font-family: "Josefin Slab", serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  text-align: center !important;
+  background-color: rgba(0, 0, 0, 0.795);
+  width: 100%;
+  height: 146px;
+  line-height: 160px;
+}
+
+/* Cards */
+
+.card-title {
+  text-align: center;
+  font-family: jura;
+  font-size: 36;
+  font-weight: 700;
+}
+
+
+
