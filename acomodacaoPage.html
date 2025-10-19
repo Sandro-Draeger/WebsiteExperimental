@@ -5,97 +5,360 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website de viagens</title>
     <link rel="stylesheet" href="style.css">
-    <!-- link Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <!-- link google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+<!-- Bootstrap -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"
+></script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+/>
 
 </head>
 
 <body>
- <section id="acomodacaoParte01">
-  <!-- Barra de navegação -->
-<nav id="navbar">
-  <div class="nav-brand"></div>
+    <section id="acomodacaoMenu">
+      <!-- Barra de navegação -->
+      <nav id="navbar">
+        <div class="nav-brand"></div>
 
-  <!-- Botão-->
-  <button class="menu-toggle" id="menu-toggle">☰</button>
 
-  <ul class="nav justify-content-end" id="nav-list">
-    <li class="nav-item"><a class="nav-link" href="#">Acomodação</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Locais</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
-  </ul>
-</nav>
-<!-- Imagem da tela inicial -->
- 
- <div class="page-container2">
-  <img src="img/Foto9.jpg" alt="Montanhas">
- <div class="textoPage2">O SEU NOVO OFFICE</div>
-</div> 
- 
-<!-- cards -->
-<section id="CardsAcomodacao">
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col">
-    <div class="card">
-      <img src="img/Foto7.jpg" class="card-img-top" alt="Van Verde">
-      <div class="card-body">
-        <h5 class="card-title">Hippie Ride</h5>
-        <p class="card-text">A partir de 50€/dia</p>
-        <p class="card-text">Equipada com :</p>
-        <ul>
-            <li>Cozinha equipada;</li>
-            <li>Cama de casal;</li>
-            <li>WC portátil;</li>
-            <li>Carregador USB;</li>
-        </ul>
+    <!-- Logotipo -->
+    <a class="logotipoAcomodacao" href="index.html">
+      <img src="img/Vector.png" alt="logotipo" />
+    </a>
+
+    <!-- Botão -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <ul class="nav justify-content-end" id="nav-list">
+      <li class="nav-item"><a class="nav-link" href="#">Acomodação</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Locais</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Imagem da tela inicial -->
+  <div class="page-container2">
+    <img src="img/Foto9.jpg" alt="Montanhas" />
+    <div class="textoPage2">O SEU NOVO OFFICE</div>
+  </div>
+
+  <!-- Cards -->
+  <section id="CardsAcomodacao">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card-total">
+          <img src="img/Foto7.jpg" class="card-img-top" alt="Van Verde" />
+          <div class="card-body">
+            <h5 class="card-title">Hippie Ride</h5>
+            <p class="card-text">A partir de 50€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul class="card-text">
+              <li>Cozinha equipada;</li>
+              <li>Cama de casal;</li>
+              <li>WC portátil;</li>
+              <li>Carregador USB;</li>
+            </ul>
+
+            <div class="buttonInfo">
+              <button
+                class="btn-info-custom"
+                data-bs-toggle="modal"
+                data-bs-target="#modalHippieRide"
+              >
+                + info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Hippie Ride -->
+      <div
+        class="modal fade"
+        id="modalHippieRide"
+        tabindex="-1"
+        aria-labelledby="modalHippieRideLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div id="boxModal" class="modal-content">
+            <div id="closeButton" class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="modal"
+                aria-label="Fechar"
+              ></button>
+            </div>
+
+            <img
+              id="img-Modal"
+              src="img/Foto7.jpg"
+              class="img-fluid rounded-top"
+              alt="Van Verde"
+            />
+
+            <div class="modal-body text-center">
+              <h5 class="modal-title mb-3" id="modalHippieRideLabel">
+                Hippie Ride
+              </h5>
+
+              <p class="text-start">
+                Imagine acordar com o som das ondas na praia, estacionar à
+                beira de uma floresta serena ou partir numa viagem
+                espontânea sem preocupações com hotéis ou horários. Alugar
+                uma carrinha adaptada é sinônimo de liberdade, conforto e
+                aventura — tudo em um só lugar!<br /><br />
+                A nossa carrinha é a solução perfeita para viajantes que
+                buscam autonomia e praticidade, sem abrir mão do essencial.
+                Por apenas <strong>50€ por dia</strong>, você tem um lar
+                sobre rodas totalmente equipado para tornar sua viagem
+                inesquecível:
+              </p>
+
+              <ul class="list-unstyled">
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Cozinha equipada
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Cama de casal
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  WC portátil
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Carregador USB
+                </li>
+              </ul>
+
+              <p class="text-start">
+                <strong>Por que escolher a nossa carrinha?</strong><br />
+                Economia: Mais barato que hotéis e com total flexibilidade.
+                <br />
+                Conforto: Tudo o que você precisa em um espaço compacto e
+                bem organizado.<br />
+                Aventura personalizada: Viaje no seu ritmo, pare onde quiser
+                e crie memórias únicas.<br /><br />
+                Seja para um fim de semana romântico, uma escapada em
+                família ou uma viagem solo cheia de descobertas, a nossa
+                carrinha está pronta para ser a sua companheira de
+                estrada.<br /><br />
+                <strong>Reserve já e transforme qualquer destino em
+                  casa!</strong>
+              </p>
+            </div>
+
+            <div
+              id="buttonModal-1"
+              class="modal-footer justify-content-center border-0"
+            >
+              <button
+                type="button"
+                class="buttonModal"
+                data-bs-dismiss="modal"
+              >
+                Alugar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card-total">
+          <img
+            src="img/Foto8.jpg"
+            class="card-img-top"
+            alt="Van branca"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Harvest Ride</h5>
+            <p class="card-text">A partir de 80€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul class="card-text">
+              <li>Cozinha equipada;</li>
+              <li>Cama de casal;</li>
+              <li>WC portátil;</li>
+              <li>Carregador USB;</li>
+            </ul>
+
+            <div class="buttonInfo">
+              <button class="btn-info-custom">+ info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card-total">
+          <img
+            src="img/Foto4.jpg"
+            class="card-img-top"
+            alt="Van branca"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Nomade Ride</h5>
+            <p class="card-text">A partir de 100€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul class="card-text">
+              <li>Cozinha equipada;</li>
+              <li>Cama de casal;</li>
+              <li>WC portátil;</li>
+              <li>Carregador USB;</li>
+            </ul>
+
+            <div class="buttonInfo">
+              <button class="btn-info-custom">+ info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card-total">
+          <img
+            src="img/Foto10.jpg"
+            class="card-img-top"
+            alt="Traseira de van branca"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Family Ride</h5>
+            <p class="card-text">A partir de 50€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul class="card-text">
+              <li>Cozinha equipada;</li>
+              <li>Cama de casal;</li>
+              <li>WC portátil;</li>
+              <li>Carregador USB;</li>
+            </ul>
+
+            <div class="buttonInfo">
+              <button class="btn-info-custom">+ info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col">
+        <div class="card-total">
+          <img
+            src="img/Foto3.jpg"
+            class="card-img-top"
+            alt="Van laranja na praia"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Surf Ride</h5>
+            <p class="card-text">A partir de 60€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul class="card-text">
+              <li>Cozinha equipada;</li>
+              <li>Cama de casal;</li>
+              <li>WC portátil;</li>
+              <li>Carregador USB;</li>
+            </ul>
+
+            <div class="buttonInfo">
+              <button class="btn-info-custom">+ info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col">
+        <div class="card-total">
+          <img
+            src="img/Foto6.jpg"
+            class="card-img-top"
+            alt="Van Verde"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Cave Ride</h5>
+            <p class="card-text">A partir de 50€/dia</p>
+            <p class="card-text">Equipada com :</p>
+            <ul class="card-text">
+              <li>Cozinha equipada;</li>
+              <li>Cama de casal;</li>
+              <li>WC portátil;</li>
+              <li>Carregador USB;</li>
+            </ul>
+
+            <div class="buttonInfo">
+              <button class="btn-info-custom">+ info</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+  </section>
+
+  <!-- Footer -->
+<section id="HopeParte6">
+<footer class="footer">
+  <div class="footer-container">
+    <nav aria-label="Footer" class="footer-nav">
+      <a href="#" class="footer-link">LIVING AROUND</a>
+    </nav>
+
+    <div class="footer-socials">
+      <a href="#" class="social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+        </svg>
+      </a>
+
+      <a href="#" class="social-link">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+      </a>
+
+      <a href="#" class="social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z"/>
+        </svg>
+      </a>
     </div>
+
+    <p class="footer-copy">Power by Cesae Digital.</p>
   </div>
-  <div class="col">
-    <div class="card">
-      <img src="" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-</div>
+</footer>
 </section>
-
-
-
-
-</section>
-
- 
-
 </body>
 </html>
+
+
+

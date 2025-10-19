@@ -3,7 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* Home parte 1 */
 
 #HomeParte01 .page-container {
@@ -22,7 +21,7 @@ html {
   align-items: center;
   padding: 15px 40px;
   margin-bottom: 20px;
-  font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
   font-size: 25px;
   font-weight: 700 !important;
 }
@@ -57,14 +56,13 @@ html {
   }
 
   #nav-list {
-    display: none; 
+    display: none;
   }
 
   #nav-list.show {
     display: flex;
   }
 }
-
 
 .page-container {
   position: relative;
@@ -74,11 +72,10 @@ html {
 
 .page-container img {
   width: 100%;
-  height: 100%;         
-  object-fit: cover;    
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
-
 
 .texto {
   font-family: "Josefin Slab", serif;
@@ -89,7 +86,7 @@ html {
   color: white;
   font-size: 70px;
   font-weight: 700;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   width: 90%;
   text-align: center;
 }
@@ -99,71 +96,69 @@ html {
 #HomeParte2 {
   background-color: #b49b2c25;
   position: relative;
-  align-items: stretch; 
+  align-items: stretch;
 }
 
 .container {
   display: flex;
-  align-items: center;      
-  justify-content: center;  
-  gap: 50px;               
-  height: 569px;           
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 569px;
   text-align: center;
 }
 
-
-.textLeft, .textRight {
+.textLeft,
+.textRight {
   flex: 1;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: jura;
   font-size: 20px;
   font-weight: 700;
-
 }
 
 .destaque {
-    color: #686931;
+  color: #686931;
 }
-
 
 .divider {
   width: 1px;
-  height: 300px; 
+  height: 300px;
   background-color: black;
 }
 
 .tituloParte2 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .fraseParte2 {
-    font-size: 43px;
+  font-size: 43px;
 }
 
 .lists-container {
   display: flex;
-  justify-content: center; 
-  gap: 40px;                
-  margin: 15px; 
-  padding: 15px; 
-    --b: 5px; /* thickness of the border */
-    --c: black; /* color of the border */
-    --w: 20px; /* width of border */
- 
-    border: var(--b) solid #0000; /* space for the border */
-    --_g: #0000 90deg, var(--c) 0;
-    --_p: var(--w) var(--w) border-box no-repeat;
- 
-    background: conic-gradient(
-                from 90deg at top var(--b) left var(--b),
-                var(--_g)
-            )
-            0 0 / var(--_p),
-        conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
-            100% 100% / var(--_p);
+  justify-content: center;
+  gap: 40px;
+  margin: 15px;
+  padding: 15px;
+  --b: 5px; /* thickness of the border */
+  --c: black; /* color of the border */
+  --w: 20px; /* width of border */
+
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+
+  background: conic-gradient(
+        from 90deg at top var(--b) left var(--b),
+        var(--_g)
+      )
+      0 0 / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+      100% 100% / var(--_p);
 }
 
 .list {
@@ -176,10 +171,9 @@ html {
 /* Home Parte 3 */
 
 #HomeParte3 {
-    background-color: black;
-    position: relative;
-    align-items: stretch; 
-    
+  background-color: black;
+  position: relative;
+  align-items: stretch;
 }
 
 .imgKombiAzul {
@@ -193,7 +187,6 @@ html {
   font-weight: 700;
   color: white;
   font-size: 30px;
-  
 }
 
 .buttonDescobrir {
@@ -221,7 +214,7 @@ html {
 #HomeParte4 {
   background-color: #b49b2c25;
   position: relative;
-  align-items: stretch; 
+  align-items: stretch;
 }
 
 .tituloParte4 {
@@ -231,12 +224,11 @@ html {
   font-weight: 700;
   color: black;
   font-size: 30px;
-  
 }
 
 .buttonExplorar {
   background-color: #00000000;
-  color:black;
+  color: black;
   border-radius: 35px;
   cursor: pointer;
   height: 77px;
@@ -268,7 +260,7 @@ html {
 
 .blogButton {
   background-color: black;
-  color:white;
+  color: white;
   border-radius: 35px;
   cursor: pointer;
   height: 77px;
@@ -289,10 +281,9 @@ html {
 
 /* Home Page 6 */
 
-
 footer.footer {
-  background-color:  black; 
-  color: #e2e8f0; 
+  background-color: black;
+  color: #e2e8f0;
   padding: 3rem 1.5rem;
 }
 
@@ -301,7 +292,6 @@ footer.footer {
   margin: 0 auto;
   text-align: center;
 }
-
 
 .footer-nav {
   display: flex;
@@ -320,7 +310,6 @@ footer.footer {
   font-size: 36px;
 }
 
-
 .footer-socials {
   display: flex;
   justify-content: center;
@@ -333,14 +322,14 @@ footer.footer {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: rgba(255, 255, 255, 0.400);
+  color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
   font-size: 0.95rem;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .social-link:hover {
-  color:  rgb(192, 191, 191);
+  color: rgb(192, 191, 191);
   transform: translateY(-2px);
 }
 
@@ -350,8 +339,8 @@ footer.footer {
 }
 
 .footer-copy {
-  font-size: 18PX;
-  color: white ;
+  font-size: 18px;
+  color: white;
   margin-top: 1rem;
   font-family: jura;
 }
@@ -400,8 +389,8 @@ footer.footer {
 
 .page-container2 img {
   width: 100%;
-  height: 570px;         
-  object-fit: cover;    
+  height: 570px;
+  object-fit: cover;
   display: flex;
 }
 
@@ -414,7 +403,7 @@ footer.footer {
   color: white;
   font-size: 70px;
   font-weight: 700;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   text-align: center !important;
   background-color: rgba(0, 0, 0, 0.795);
   width: 100%;
@@ -424,12 +413,132 @@ footer.footer {
 
 /* Cards */
 
+.logotipoAcomodacao {
+  text-align: left;
+  position: absolute;
+  
+}
+
+.card-total {
+  margin: 60px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+  padding: 30px;
+  background-color: #d9d9d9;
+  border-radius: 35px;
+  
+}
+
 .card-title {
   text-align: center;
   font-family: jura;
-  font-size: 36;
+  font-size: 36px;
   font-weight: 700;
+  margin: 10px;
 }
 
+.card-text {
+  font-family: jura;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px;
+}
 
+.buttonInfo {
+  text-align: center;
+
+}
+
+.btn-info-custom {
+  margin-top: 30px;
+  outline: none;
+  background: none; 
+  border: none; 
+  color: #000; 
+  font-family: jura;
+  font-size: 20px; 
+  cursor: pointer; 
+  padding: 0; 
+}
+
+.card-img-top {
+  width: 333px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 35px !important;
+  display: block;
+}
+
+/* Modal */
+
+#boxModal {
+  border-radius: 35px !important;
+  background-color: #d9d9d9;
+}
+
+ .modal-dialog {
+  max-width: 763px !important; 
+ }
+
+#closeButton {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.modal-backdrop.show {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), 
+    url("img/Foto9.jpg") center/cover no-repeat;
+  backdrop-filter: blur(4px);
+  opacity: 1 !important;
+}
+
+#img-Modal {
+  border-radius: 35px !important;
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+#modalHippieRideLabel {
+  font-weight: 700;
+  font-family: jura;
+  font-size: 36px;
+}
+
+.text-start {
+  font-family: jura;
+  text-align: justify !important;
+  margin-left: 45px;
+  margin-right: 45px;
+  font-size: 20px;
+}
+
+.list-unstyled {
+  text-align: left !important;
+  font-family: jura;
+  margin-left: 45px;
+  font-size: 20px;
+}
+
+.buttonModal {
+  height: 76px;
+  width: 345px;
+  background-color: #686931;
+  color: #000;
+  border-radius: 15px;
+  font-family: jura;
+  font-size: 25px;
+  border: none;
+  
+}
+
+.buttonModal:hover {
+  background-color: #686931d3;
+}
+
+#buttonModal-1 {
+  margin-bottom: 30px;
+}
+
+/* ---------CONTATOS---------- */
 
