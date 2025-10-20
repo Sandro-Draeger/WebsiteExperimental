@@ -1,8 +1,8 @@
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website de viagens</title>
+    <title>Living Around - Página Locais</title>
     <link rel="stylesheet" href="style.css" />
 
     <!-- Bootstrap -->
@@ -67,67 +67,76 @@
         <img src="img/Foto12.jpg" alt="van estacionada em montanha à noite" />
       </div>
     </section>
+
     <!-- Pesquisar -->
-<section id="formularioMapas">
-  <div class="form-containerLocais">
-    <!-- 🧾 FORMULÁRIO -->
-    <div class="form-box">
-      <p>Escolha o país:</p>
-      <select id="pais" class="form-select form-select-lg mb-3">
-        <option selected>País</option>
-        <option value="Portugal">Portugal</option>
-        <option value="Brasil">Brasil</option>
-        <option value="Cabo Verde">Cabo Verde</option>
-      </select>
+    <section id="formularioMapas">
+      <div class="form-containerLocais">
+        <!-- 🧾 FORMULÁRIO -->
+        <div class="form-box">
+          <p>Escolha o país:</p>
+          <select id="pais" class="form-select form-select-lg mb-3">
+            <option disabled>País</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Cabo Verde">Cabo Verde</option>
+          </select>
 
-      <p>Escolha a cidade:</p>
-      <select id="cidade" class="form-select form-select-lg">
-        <option selected>Cidade</option>
-        <option value="Porto">Porto</option>
-        <option value="Lisboa">Lisboa</option>
-        <option value="Guimarães">Guimarães</option>
-      </select>
+          <p>Escolha a cidade:</p>
+          <select id="cidade" class="form-select form-select-lg">
+            <option disabled>Cidade</option>
+            <option value="Porto">Porto</option>
+            <option value="Lisboa">Lisboa</option>
+            <option value="Guimarães">Guimarães</option>
+          </select>
 
-      <div class="buttonMap">
-        <button class="buttonMap1" id="verMapa">Ver</button>
+          <div class="buttonMap">
+            <button class="buttonMap1" id="verMapa">Ver</button>
+          </div>
+        </div>
+
+        <!-- MAPA -->
+        <div class="map-box">
+          <iframe
+            id="mapa"
+            width="466"
+            height="500"
+            style="border: 0; border-radius: 15px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+          <p id="endereco" class="map-endereco">
+            Selecione um país e uma cidade.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- 🗺️ MAPA -->
-    <div class="map-box">
-      <iframe
-        id="mapa"
-        width="466"
-        height="500"
-        style="border: 0; border-radius: 15px;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <p id="endereco" class="map-endereco">Selecione um país e uma cidade.</p>
-    </div>
-  </div>
-</section>
+    <script>
+      document
+        .getElementById("verMapa")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
 
-<script>
-  document.getElementById("verMapa").addEventListener("click", function (e) {
-    e.preventDefault();
+          const pais = document.getElementById("pais").value;
+          const cidade = document.getElementById("cidade").value;
+          const mapa = document.getElementById("mapa");
+          const endereco = document.getElementById("endereco");
 
-    const pais = document.getElementById("pais").value;
-    const cidade = document.getElementById("cidade").value;
-    const mapa = document.getElementById("mapa");
-    const endereco = document.getElementById("endereco");
+          if (pais === "País" || cidade === "Cidade") {
+            alert("Por favor, selecione o país e a cidade.");
+            return;
+          }
 
-    if (pais === "País" || cidade === "Cidade") {
-      alert("Por favor, selecione o país e a cidade.");
-      return;
-    }
+          const local = `${cidade}, ${pais}`;
+          const url = `https://www.google.com/maps?q=${encodeURIComponent(
+            local
+          )}&output=embed`;
 
-    const local = `${cidade}, ${pais}`;
-    const url = `https://www.google.com/maps?q=${encodeURIComponent(local)}&output=embed`;
-
-    mapa.src = url;
-    endereco.textContent = `Endereço selecionado: ${cidade}, ${pais}`;
-  });
-</script>
-    </body>
+          mapa.src = url;
+          endereco.textContent = `Endereço selecionado: ${cidade}, ${pais}`;
+        });
+    </script>
+  </body>
+</html>

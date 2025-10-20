@@ -6,7 +6,7 @@ html {
 /* Home parte 1 */
 
 #HomeParte01 .page-container {
-  height: 100vh; /* 70% da altura da tela */
+  height: 100vh;
 }
 
 #navbar {
@@ -50,6 +50,7 @@ html {
   cursor: pointer;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -273,6 +274,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: transparent;
 }
 
 .blogButton:hover {
@@ -375,7 +377,7 @@ footer.footer {
   transition: 0.3s;
 }
 
-/* ---------------------PAGINA ACOMODAÇÃO--------------------------- */
+/* -------------------------------ACOMODAÇÃO-------------------------------- */
 
 #navbar2 {
   position: absolute;
@@ -403,11 +405,10 @@ footer.footer {
   line-height: 118%;
   margin: 30px;
   text-shadow: 1px 1px 2px rgba(104, 104, 104, 0.26);
-  
 }
 
 .nav-link2:hover {
- color: #555555 !important;
+  color: #555555 !important;
 }
 
 #CardsAcomodacao {
@@ -453,10 +454,10 @@ footer.footer {
 /* Cards */
 
 .container-grid > div {
-  display: flex;          
-  justify-content: center; 
-  align-items: center;     
-  text-align: center;     
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card-total {
@@ -579,7 +580,7 @@ footer.footer {
   margin-bottom: 30px;
 }
 
-/* ---------CONTATOS---------- */
+/* ------------------------------CONTATOS------------------------------- */
 
 .page-container3 {
   position: relative;
@@ -603,7 +604,7 @@ footer.footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  display: flex;
 }
 
 .textPage3 {
@@ -630,34 +631,6 @@ footer.footer {
   font-family: "Jura", sans-serif;
   text-align: right;
   margin: 0;
-}
-
-/* Responsividade */
-@media (max-width: 992px) {
-  .textPage3 {
-    top: 10%;
-    right: 5%;
-    max-width: 350px;
-    padding: 15px;
-  }
-
-  .frase {
-    font-size: 1.4rem;
-  }
-
-  .autorFrase {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .textPage3 {
-    position: static;
-    background: rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
-    text-align: center;
-    width: 90%;
-  }
 }
 
 #navbar3 {
@@ -710,7 +683,7 @@ footer.footer {
   border-radius: 35px;
   padding: 50px;
   width: 467px;
-  height: 700px;
+  height: 550px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   z-index: 2;
   display: block;
@@ -739,7 +712,7 @@ footer.footer {
 }
 
 .buttonContato-1:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.349);
   color: black;
 }
 
@@ -769,20 +742,19 @@ footer.footer {
   pointer-events: auto;
 }
 
-/* ---------Pagina de pesquisa (mapa)----------- */
-
+/* --------------------------------Pagina de pesquisa (mapa)------------------------------- */
 
 #formularioMapas {
-  position: absolute;       
-  top: 50%;                 
-  left: 50%;                 
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: flex-start;
   width: 100%;
   padding: 60px 0;
-  z-index: 5;               
+  z-index: 5;
 }
 
 .form-container {
@@ -790,17 +762,17 @@ footer.footer {
   justify-content: space-between;
   align-items: flex-start;
   gap: 100px;
-  flex-wrap: nowrap;         
-  max-width: 1000px; 
+  flex-wrap: nowrap;
+  max-width: 1000px;
   width: 100%;
 }
 
 /* FORMULÁRIO */
 .form-containerLocais {
-  display: flex;        
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: flex-start;
-  gap: 200px;           
+  gap: 200px;
   flex-wrap: nowrap;
   max-width: 1000px;
   width: 100%;
@@ -862,15 +834,15 @@ footer.footer {
 /*RESPONSIVIDADE*/
 @media (max-width: 900px) {
   #formularioMapas {
-    position: absolute;     
-    top: 55%;              
+    position: absolute;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px 0;
   }
 
   .form-container {
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
     gap: 40px;
     max-width: 90%;
@@ -879,6 +851,6 @@ footer.footer {
   .form-box,
   .map-box {
     width: 100%;
-    height: auto;          
+    height: auto;
   }
 }
