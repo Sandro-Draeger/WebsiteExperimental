@@ -351,12 +351,12 @@ footer.footer {
   position: fixed;
   bottom: 58px;
   right: 58px;
-  width: 58px;
-  height: 58px;
+  width: 80px;
+  height: 80px;
   border: 3px solid black;
   border-radius: 50%;
   padding: 0;
-  background: transparent;
+  background: #d9d9d9a9;
   box-sizing: border-box;
 }
 
@@ -376,6 +376,39 @@ footer.footer {
 }
 
 /* ---------------------PAGINA ACOMODAÇÃO--------------------------- */
+
+#navbar2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: transparent !important;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+  font-family: "Jura", sans-serif;
+  font-size: 25px;
+  font-weight: 700 !important;
+}
+
+.nav-link2 {
+  font-family: jura;
+  color: black !important;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 118%;
+  margin: 30px;
+  text-shadow: 1px 1px 2px rgba(104, 104, 104, 0.26);
+  
+}
+
+.nav-link2:hover {
+ color: #555555 !important;
+}
 
 #CardsAcomodacao {
   background-color: #b49b2c25;
@@ -411,11 +444,19 @@ footer.footer {
   line-height: 160px;
 }
 
-/* Cards */
-
 .logotipoAcomodacao {
   text-align: left;
   position: absolute;
+  margin-top: 20px;
+}
+
+/* Cards */
+
+.container-grid > div {
+  display: flex;          
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;     
 }
 
 .card-total {
@@ -424,6 +465,7 @@ footer.footer {
   padding: 30px;
   background-color: #d9d9d9;
   border-radius: 35px;
+  width: 574px;
 }
 
 .card-title {
@@ -471,6 +513,7 @@ footer.footer {
 #boxModal {
   border-radius: 35px !important;
   background-color: #d9d9d9;
+  margin: 50px;
 }
 
 .modal-dialog {
@@ -627,7 +670,7 @@ footer.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 30px 40px;
   margin-bottom: 20px;
   font-family: "Jura", sans-serif;
   font-size: 25px;
@@ -666,7 +709,8 @@ footer.footer {
   font-size: 20px;
   border-radius: 35px;
   padding: 50px;
-  width: 400px;
+  width: 467px;
+  height: 700px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   z-index: 2;
   display: block;
@@ -727,37 +771,52 @@ footer.footer {
 
 /* ---------Pagina de pesquisa (mapa)----------- */
 
+
 #formularioMapas {
+  position: absolute;       
+  top: 50%;                 
+  left: 50%;                 
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center; 
   align-items: flex-start;
   width: 100%;
   padding: 60px 0;
+  z-index: 5;               
 }
 
-/* Container que segura o formulário e o mapa */
 .form-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 100px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;         
   max-width: 1000px; 
   width: 100%;
-  position: absolute;
-  top: 30%;
-  z-index: 1;
 }
 
 /* FORMULÁRIO */
+.form-containerLocais {
+  display: flex;        
+  justify-content: center; 
+  align-items: flex-start;
+  gap: 200px;           
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  width: 100%;
+}
+
 .form-box {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background-color: #d9d9d9;
+  color: black;
   font-family: jura;
+  font-weight: 700;
   font-size: 20px;
-  border-radius: 35px;
+  border-radius: 15px;
   padding: 50px;
-  width: 500px;
+  padding-top: 100px;
+  width: 466px;
+  height: 500px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -767,15 +826,11 @@ footer.footer {
   color: white;
   font-family: jura;
   border-radius: 35px;
-  padding: 30px;
-  width: 400px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
- 
 }
 
 .map-endereco {
-  margin-top: 15px;
+  margin-top: 30px;
   font-size: 18px;
   font-weight: 600;
 }
@@ -788,30 +843,42 @@ footer.footer {
 
 .buttonMap1 {
   background-color: #686931;
+  font-family: jura;
   color: black;
-  border-radius: 40px;
+  border-radius: 15px;
   height: 60px;
-  width: 250px;
+  width: 345px;
   border: transparent;
   font-size: 18px;
   cursor: pointer;
 }
 
 .buttonContato-1:hover {
-  background-color: #fff;
+  background-color: #978080;
   color: #000;
   transition: 0.3s ease;
 }
 
-/* RESPONSIVIDADE */
+/*RESPONSIVIDADE*/
 @media (max-width: 900px) {
+  #formularioMapas {
+    position: absolute;     
+    top: 55%;              
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 0;
+  }
+
   .form-container {
-    flex-direction: column;
+    flex-direction: column;  
     align-items: center;
+    gap: 40px;
+    max-width: 90%;
   }
 
   .form-box,
   .map-box {
-    width: 90%;
+    width: 100%;
+    height: auto;          
   }
 }
