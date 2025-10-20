@@ -11,9 +11,9 @@ Mesmo com esses desafios, o processo foi super gratificante.
 
 Tecnologias utilizadas:
 
-• HTML5 para a estrutura das páginas;
-• CSS3 para o estilo e responsividade;
-• JavaScript para adicionar interatividade e pequenas funcionalidades dinâmicas.
+- HTML5 para a estrutura das páginas;
+- CSS3 para o estilo e responsividade;
+- JavaScript para adicionar interatividade e pequenas funcionalidades dinâmicas.
 
 Criar o website Living Around foi uma experiência muito enriquecedora. Aprendi na prática a importância da atenção aos detalhes e de manter consistência entre o design e o código. Ver o projeto tomando forma, ficando cada vez mais parecido com o Figma e funcionando perfeitamente, foi uma das partes mais interessantes do processo.
 
