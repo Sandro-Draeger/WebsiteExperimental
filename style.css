@@ -740,10 +740,13 @@ footer.footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 50px;
+  gap: 100px;
   flex-wrap: wrap;
   max-width: 1000px; 
   width: 100%;
+  position: absolute;
+  top: 30%;
+  z-index: 1;
 }
 
 /* FORMULÁRIO */
@@ -754,20 +757,21 @@ footer.footer {
   font-size: 20px;
   border-radius: 35px;
   padding: 50px;
-  width: 400px;
+  width: 500px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* MAPA */
 .map-box {
-  background-color: #fff;
-  color: #000;
+  background-color: transparent;
+  color: white;
   font-family: jura;
   border-radius: 35px;
   padding: 30px;
   width: 400px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
+ 
 }
 
 .map-endereco {
