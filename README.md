@@ -1,6 +1,6 @@
 # Website Living Around
 
-Living Around — Projeto de Front-End
+Living Around — Projeto de Front-End - https://sandro-draeger.github.io/WebsiteExperimental/
 
 Este projeto foi desenvolvido para a disciplina de Front-End, com o objetivo de criar um website de viagens totalmente funcional e visualmente fiel ao layout proposto no <a href="https://www.figma.com/design/j3a8zRO9N8fYDaFr1FkmKr/LandPage?node-id=3-5&p=f&t=jcmougqCpnGBs0tg-0">Figma.</a>
 
